@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-welcome',
@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  @Input() name: string;
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
+    this.setUpperCase();
+    console.log(this.name);
+  }
+
+  setUpperCase() {
+    this.name = this.name.toUpperCase();
+  }
+
+  displayName() {
+    alert(this.name);
   }
 
 }
