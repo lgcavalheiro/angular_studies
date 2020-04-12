@@ -8,9 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "gen": "ng generate component"
+    "gen": "ng generate component",
+    "deploy": "gh-pages -d dist/my-first-app"
   },
   "private": true,
+  "homepage": "lgcavalheiro.github.io/angular_studies/",
   "dependencies": {
     "@angular/animations": "~9.0.1",
     "@angular/common": "~9.0.1",
@@ -20,6 +22,7 @@
     "@angular/platform-browser": "~9.0.1",
     "@angular/platform-browser-dynamic": "~9.0.1",
     "@angular/router": "~9.0.1",
+    "gh-pages": "^2.2.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
